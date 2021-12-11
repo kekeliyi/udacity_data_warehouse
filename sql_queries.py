@@ -156,7 +156,7 @@ user_table_insert = ("""
 song_table_insert = ("""
    INSERT INTO songs(song_id,title,artist_id,year,duration)
    SELECT distinct song_id,title,artist_id,year,duration
-   from staging_song
+   from staging_songs
 """)
 
 artist_table_insert = ("""
